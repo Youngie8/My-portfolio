@@ -17,11 +17,11 @@ for(var i = 0; i < col.length; i++){
 }
 contact.addEventListener('click', function(){
     document.querySelector('.side-bar').classList.toggle('none');
-    
-})
-theme.addEventListener('click', function(){
-    document.querySelector(".section-1").classList.toggle("changeTheme");
-    document.querySelector(".section-3").classList.toggle("changeTheme");
-    document.querySelector(".section-2").classList.toggle("changeTheme");
-    document.querySelector(".side-bar").classList.toggle("changeTheme");
+    document.querySelector(".sections").classList.toggle("ml");
+
 });
+theme.addEventListener('click', function(){
+    document.querySelector("body").classList.toggle("changeTheme");
+    document.querySelector(".btn").classList.toggle('changeTheme');
+    document.querySelector(".theme").classList.toggle('changeTheme');
+}); 
